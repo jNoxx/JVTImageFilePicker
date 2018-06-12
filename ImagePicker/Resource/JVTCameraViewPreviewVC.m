@@ -39,7 +39,7 @@
     self.backgroundBlackTransparentView.frame = backgroundFrame;
     
     UIButton *btnCancel = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnCancel setTitle:@"Cancel" forState:UIControlStateNormal];
+    [btnCancel setTitle:@"Annuleer" forState:UIControlStateNormal];
     [btnCancel.titleLabel setTextColor:[UIColor whiteColor]];
     CGFloat btnCancelHeight = 50;
     CGRect btnCancelFrame = CGRectMake(20, (backgroundViewHeight / 2) - (btnCancelHeight / 2), 70, btnCancelHeight);

@@ -51,7 +51,7 @@
     CGFloat btnWidth = 70;
     CGFloat btnPaddingFromLeft = 0;
     UIButton *btnCancel = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnCancel setTitle:@"Cancel" forState:UIControlStateNormal];
+    [btnCancel setTitle:@"Annuleer" forState:UIControlStateNormal];
     [btnCancel.titleLabel setTextColor:[UIColor whiteColor]];
     CGFloat btnCancelHeight = 50;
     CGRect btnCancelFrame = CGRectMake(btnPaddingFromLeft, (backgroundViewHeight / 2) - (btnCancelHeight / 2), btnWidth, btnCancelHeight);
@@ -60,7 +60,7 @@
     [self.backgroundBlackTransparentView addSubview:btnCancel];
     
     UIButton *btnSend = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnSend setTitle:@"Select" forState:UIControlStateNormal];
+    [btnSend setTitle:@"Kies" forState:UIControlStateNormal];
     [btnSend.titleLabel setTextColor:[UIColor whiteColor]];
     CGRect btnSendFrame = CGRectMake([UIScreen mainScreen].bounds.size.width - btnWidth - btnPaddingFromLeft, (backgroundViewHeight / 2) - (btnCancelHeight / 2), btnWidth, btnCancelHeight);
     btnSend.frame = btnSendFrame;
