@@ -55,10 +55,10 @@
     [self addBackgroundDimmed];
     [self showBackgroundDimmed];
     
-    NSString *photoLibraryTxt = @"Photo Library";
-    NSString *takePhotoOrVideoTxt = @"Take Photo";
+    NSString *photoLibraryTxt = @"Foto bibliotheek";
+    NSString *takePhotoOrVideoTxt = @"Neem foto";
     NSString *uploadFileTxt = @"Upload File";
-    NSString *cancelTxt = @"Cancel";
+    NSString *cancelTxt = @"Annuleer";
     self.actionSheet = [[JVTActionSheetView alloc] init];
     self.actionSheet.delegate = self;
     
