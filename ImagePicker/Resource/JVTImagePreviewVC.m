@@ -48,7 +48,7 @@
     [self.view addSubview:self.backgroundBlackTransparentView];
     self.backgroundBlackTransparentView.frame = backgroundFrame;
     
-    CGFloat btnWidth = 70;
+    CGFloat btnWidth = 150;
     CGFloat btnPaddingFromLeft = 0;
     UIButton *btnCancel = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnCancel setTitle:@"Annuleer" forState:UIControlStateNormal];

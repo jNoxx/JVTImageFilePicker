@@ -42,7 +42,7 @@
     [btnCancel setTitle:@"Annuleer" forState:UIControlStateNormal];
     [btnCancel.titleLabel setTextColor:[UIColor whiteColor]];
     CGFloat btnCancelHeight = 50;
-    CGRect btnCancelFrame = CGRectMake(20, (backgroundViewHeight / 2) - (btnCancelHeight / 2), 100, btnCancelHeight);
+    CGRect btnCancelFrame = CGRectMake(20, (backgroundViewHeight / 2) - (btnCancelHeight / 2), 150, btnCancelHeight);
     btnCancel.frame = btnCancelFrame;
     [btnCancel addTarget:self action:@selector(dissmiss) forControlEvents:UIControlEventTouchUpInside];
     [self.backgroundBlackTransparentView addSubview:btnCancel];
