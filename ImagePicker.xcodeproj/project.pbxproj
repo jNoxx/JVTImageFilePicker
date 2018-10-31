@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6AC24DA22189EB18005FDA61 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC24DA02189EB17005FDA61 /* UIImage+FixOrientation.m */; };
-		6AC24DC1218A0301005FDA61 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC24DB7218A02FF005FDA61 /* SVProgressAnimatedView.m */; };
-		6AC24DC2218A0301005FDA61 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC24DB8218A0300005FDA61 /* SVProgressHUD.m */; };
-		6AC24DC3218A0301005FDA61 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC24DB9218A0300005FDA61 /* SVIndefiniteAnimatedView.m */; };
-		6AC24DC4218A0301005FDA61 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC24DBC218A0300005FDA61 /* SVRadialGradientLayer.m */; };
-		6AC24DC9218A05C8005FDA61 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6AC24DC8218A05C8005FDA61 /* SVProgressHUD.bundle */; };
 		ED3D52BD1CD5265C00FD4A77 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D52B31CD5265C00FD4A77 /* EXTScope.m */; };
 		ED3D52BE1CD5265C00FD4A77 /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D52B51CD5265C00FD4A77 /* LLSimpleCamera.m */; };
 		ED3D52BF1CD5265C00FD4A77 /* UIBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D52B81CD5265C00FD4A77 /* UIBlockButton.m */; };
@@ -66,16 +61,6 @@
 /* Begin PBXFileReference section */
 		6AC24DA02189EB17005FDA61 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		6AC24DA12189EB18005FDA61 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
-		6AC24DB7218A02FF005FDA61 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		6AC24DB8218A0300005FDA61 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		6AC24DB9218A0300005FDA61 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		6AC24DBA218A0300005FDA61 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		6AC24DBB218A0300005FDA61 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
-		6AC24DBC218A0300005FDA61 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		6AC24DBD218A0300005FDA61 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		6AC24DBE218A0301005FDA61 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		6AC24DBF218A0301005FDA61 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		6AC24DC8218A05C8005FDA61 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		902546111DD6258600D53C58 /* ImagePicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImagePicker.entitlements; sourceTree = "<group>"; };
 		ED3D52B21CD5265C00FD4A77 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		ED3D52B31CD5265C00FD4A77 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
@@ -224,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				ED3D52C21CD5267700FD4A77 /* background.jpg */,
-				6AC24DC8218A05C8005FDA61 /* SVProgressHUD.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -243,15 +227,6 @@
 				6AC24DA02189EB17005FDA61 /* UIImage+FixOrientation.m */,
 				ED3D52BB1CD5265C00FD4A77 /* UIImagePickerController+Block.h */,
 				ED3D52BC1CD5265C00FD4A77 /* UIImagePickerController+Block.m */,
-				6AC24DBE218A0301005FDA61 /* SVIndefiniteAnimatedView.h */,
-				6AC24DB9218A0300005FDA61 /* SVIndefiniteAnimatedView.m */,
-				6AC24DBA218A0300005FDA61 /* SVProgressAnimatedView.h */,
-				6AC24DB7218A02FF005FDA61 /* SVProgressAnimatedView.m */,
-				6AC24DBB218A0300005FDA61 /* SVProgressHUD-Prefix.pch */,
-				6AC24DBD218A0300005FDA61 /* SVProgressHUD.h */,
-				6AC24DB8218A0300005FDA61 /* SVProgressHUD.m */,
-				6AC24DBF218A0301005FDA61 /* SVRadialGradientLayer.h */,
-				6AC24DBC218A0300005FDA61 /* SVRadialGradientLayer.m */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -499,7 +474,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7A8E551CB3B09800A39614 /* LaunchScreen.storyboard in Resources */,
-				6AC24DC9218A05C8005FDA61 /* SVProgressHUD.bundle in Resources */,
 				ED3D52C31CD5267700FD4A77 /* background.jpg in Resources */,
 				ED7A8E521CB3B09800A39614 /* Assets.xcassets in Resources */,
 				ED403BA91D858C6900A16668 /* Info.plist in Resources */,
@@ -533,7 +507,6 @@
 				ED403BC51D858EE700A16668 /* JVTCameraViewPreviewVC.m in Sources */,
 				ED403BD81D858F1900A16668 /* JVTTransitionOpenImageFullScreenPresentation.m in Sources */,
 				ED3D52BE1CD5265C00FD4A77 /* LLSimpleCamera.m in Sources */,
-				6AC24DC2218A0301005FDA61 /* SVProgressHUD.m in Sources */,
 				ED403BCE1D858F1200A16668 /* JVTTransitionOpenViewFullScreenDismiss.m in Sources */,
 				ED403BCD1D858F1200A16668 /* JVTTransitionOpenViewFullScreenDelegate.m in Sources */,
 				ED3D52C11CD5265C00FD4A77 /* UIImagePickerController+Block.m in Sources */,
@@ -547,12 +520,9 @@
 				ED3D52BD1CD5265C00FD4A77 /* EXTScope.m in Sources */,
 				ED403BAA1D858C6900A16668 /* main.m in Sources */,
 				ED403BB11D858E9500A16668 /* JVTCameraAccesebility.m in Sources */,
-				6AC24DC3218A0301005FDA61 /* SVIndefiniteAnimatedView.m in Sources */,
 				ED403BD71D858F1900A16668 /* JVTTransitionOpenImageFullScreenDismiss.m in Sources */,
-				6AC24DC1218A0301005FDA61 /* SVProgressAnimatedView.m in Sources */,
 				ED403BBA1D858EBB00A16668 /* JVTActionSheetView.m in Sources */,
 				ED403BA81D858C6900A16668 /* AppDelegate.m in Sources */,
-				6AC24DC4218A0301005FDA61 /* SVRadialGradientLayer.m in Sources */,
 				ED403BDE1D858F3400A16668 /* JVTRecentImagesVideoCollectionViewCell.m in Sources */,
 				ED403BD61D858F1900A16668 /* JVTTransitionOpenImageFullScreenDelegate.m in Sources */,
 				6AC24DA22189EB18005FDA61 /* UIImage+FixOrientation.m in Sources */,

@@ -40,7 +40,7 @@ static NSInteger maxResults = 15;
       return;
     }
     
-    [SVProgressHUD showWithStatus:@"Foto's aan het ophalen"];
+//    [SVProgressHUD showWithStatus:@"Foto's aan het ophalen"];
     __block NSMutableArray *allImages = [NSMutableArray array];
     
     //   Get assets from the PHFetchResult object
@@ -72,7 +72,7 @@ static NSInteger maxResults = 15;
                                                                                  }
                                                                                }];
     }];
-    [SVProgressHUD dismiss];
+//    [SVProgressHUD dismiss];
   }];
 }
 

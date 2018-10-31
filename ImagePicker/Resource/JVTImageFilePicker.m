@@ -207,8 +207,7 @@
     @weakify(self);
     [[JVTWorker shared] addOperationWithBlock:^{
         @strongify(self);
-        
-        NSLog(@"Document picker picked %@", url);
+      
         NSData *file = [self fileFromFileURL:url];
         NSString *fileName = [url lastPathComponent];
         
