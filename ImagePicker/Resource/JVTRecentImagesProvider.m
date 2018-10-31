@@ -10,7 +10,7 @@
 @import Photos;
 @import AssetsLibrary;
 #import "JVTCameraAccesebility.h"
-#import "SVProgressHUD.h"
+//#import "SVProgressHUD.h"
 
 static NSInteger maxResults = 15;
 
