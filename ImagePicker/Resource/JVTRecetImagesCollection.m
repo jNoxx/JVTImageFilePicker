@@ -76,6 +76,7 @@ static int cameraIndex = 0;
 
 - (void)cameraStateAccessible {
     self.camera = [[LLSimpleCamera alloc] init];
+  self.camera.fixOrientationAfterCapture = YES;
 }
 
 - (void)configureItemSize {
