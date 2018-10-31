@@ -167,8 +167,8 @@
             @strongify(self);
             UIImage *image = (UIImage *)[info valueForKey:UIImagePickerControllerOriginalImage];
             // Rotate this bloody image.
-          
-            [self didPressSendOnImage:[image fixOrientation]];
+            NSLog(@"Normalize image");
+            [self didPressSendOnImage:[image normalizedImage]];
             
         };
         self.imagePickerController.cancellationBlock = ^(UIImagePickerController *picker) {
