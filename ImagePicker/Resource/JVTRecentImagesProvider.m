@@ -10,6 +10,7 @@
 @import Photos;
 @import AssetsLibrary;
 #import "JVTCameraAccesebility.h"
+#import "SVProgressHUD.h"
 
 static NSInteger maxResults = 15;
 
@@ -39,6 +40,7 @@ static NSInteger maxResults = 15;
       return;
     }
     
+    [SVProgressHUD showWithStatus:@"Foto's aan het ophalen"];
     __block NSMutableArray *allImages = [NSMutableArray array];
     
     //   Get assets from the PHFetchResult object
@@ -70,6 +72,7 @@ static NSInteger maxResults = 15;
                                                                                  }
                                                                                }];
     }];
+    [SVProgressHUD dismiss];
   }];
 }
 
