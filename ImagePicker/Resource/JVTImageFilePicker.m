@@ -18,6 +18,7 @@
 #import "JVTActionSheetView.h"
 #import "EXTScope.h"
 #import "JVTCameraAccesebility.h"
+#import "UIImage+FixOrientation.h"
 
 #define DEFAULT_IMAGE_SIZE CGSizeMake(600, 600)
 
@@ -167,7 +168,7 @@
             UIImage *image = (UIImage *)[info valueForKey:UIImagePickerControllerOriginalImage];
             // Rotate this bloody image.
           
-            [self didPressSendOnImage:image];
+            [self didPressSendOnImage:[image fixOrientation]];
             
         };
         self.imagePickerController.cancellationBlock = ^(UIImagePickerController *picker) {
