@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AC24D9F2189EAA1005FDA61 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC24D9E2189EAA1005FDA61 /* UIImage+fixOrientation.m */; };
 		ED3D52BD1CD5265C00FD4A77 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D52B31CD5265C00FD4A77 /* EXTScope.m */; };
 		ED3D52BE1CD5265C00FD4A77 /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D52B51CD5265C00FD4A77 /* LLSimpleCamera.m */; };
 		ED3D52BF1CD5265C00FD4A77 /* UIBlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D52B81CD5265C00FD4A77 /* UIBlockButton.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AC24D9D2189EAA1005FDA61 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		6AC24D9E2189EAA1005FDA61 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		902546111DD6258600D53C58 /* ImagePicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImagePicker.entitlements; sourceTree = "<group>"; };
 		ED3D52B21CD5265C00FD4A77 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		ED3D52B31CD5265C00FD4A77 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 			children = (
 				ED403BB21D858EA200A16668 /* JVTImageFilePicker.h */,
 				ED403BB31D858EA200A16668 /* JVTImageFilePicker.m */,
+				6AC24D9D2189EAA1005FDA61 /* UIImage+fixOrientation.h */,
+				6AC24D9E2189EAA1005FDA61 /* UIImage+fixOrientation.m */,
 				ED7A8EA31CB4035100A39614 /* ActionSheetView */,
 				ED403BB81D858EBB00A16668 /* JVTActionSheetView.h */,
 				ED403BB91D858EBB00A16668 /* JVTActionSheetView.m */,
@@ -510,6 +515,7 @@
 				ED403BCE1D858F1200A16668 /* JVTTransitionOpenViewFullScreenDismiss.m in Sources */,
 				ED403BCD1D858F1200A16668 /* JVTTransitionOpenViewFullScreenDelegate.m in Sources */,
 				ED3D52C11CD5265C00FD4A77 /* UIImagePickerController+Block.m in Sources */,
+				6AC24D9F2189EAA1005FDA61 /* UIImage+fixOrientation.m in Sources */,
 				ED403BC01D858ED900A16668 /* JVTRecetImagesCollection.m in Sources */,
 				ED403BAE1D858E8700A16668 /* JVTWorker.m in Sources */,
 				ED403BDD1D858F3400A16668 /* JVTRecentImagesCollectionViewCell.m in Sources */,
