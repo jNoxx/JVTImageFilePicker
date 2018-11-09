@@ -59,6 +59,7 @@
     NSString *photoLibraryTxt = @"Foto bibliotheek";
     NSString *takePhotoOrVideoTxt = @"Neem foto";
     NSString *uploadFileTxt = @"Upload File";
+    NSString *bibliotheekTxt = @"Kies bestand";
     NSString *cancelTxt = @"Annuleer";
     self.actionSheet = [[JVTActionSheetView alloc] init];
     self.actionSheet.delegate = self;
@@ -95,10 +96,20 @@
                                                                                }];
         [self.actionSheet addAction:takePhotoOrVideo];
     }
+  
+  
     
     if (self.isFilePickerEnabled) {
         [self.actionSheet addAction:uploadFile];
     }
+  
+    JVTActionSheetAction *bibliotheekAction = [JVTActionSheetAction actionWithTitle:bibliotheekTxt
+                                                                       actionType:kActionType_default handler:^(JVTActionSheetAction *action) {
+                                                                         @strongify(self);
+                                                                         [self showDocumentPicker];
+                                                                       }];
+    [self.actionSheet addAction:bibliotheekAction];
+  
     [self.actionSheet addAction:cancel];
     
     if (customAlertActions) {
@@ -192,6 +203,18 @@
     [self.presentedFromController presentViewController:documentMenuViewController animated:YES completion:nil];
 }
 
+- (void)showDocumentPicker {
+  UIDocumentPickerViewController *documentPicker = [[UIDocumentPickerViewController alloc] initWithDocumentTypes:@[(NSString *)kUTTypePDF] inMode:UIDocumentPickerModeImport];
+  documentPicker.delegate = self;
+  if (@available(iOS 11.0, *)) {
+    documentPicker.allowsMultipleSelection = NO;
+  } else {
+    // Fallback on earlier versions
+  }
+
+  [self.presentedFromController presentViewController:documentPicker animated:YES completion:nil];
+}
+
 #pragma mark - documents picker
 
 - (void)documentMenu:(UIDocumentMenuViewController *)documentMenu didPickDocumentPicker:(UIDocumentPickerViewController *)documentPicker {
@@ -225,7 +248,6 @@
             } else {
                 [self.delegate didPickFile:file fileName:fileName];
             }
-            
         });
         
     }];
