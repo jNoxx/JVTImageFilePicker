@@ -25,6 +25,13 @@
 @property (assign) bool isFilePickerEnabled; // Default is YES.
 @property (weak) id<FilesPickerDelegate> delegate;
 
+// Translations
+@property (nonatomic, assign) NSString *photoLibraryTxt;
+@property (nonatomic, assign) NSString *takePhotoOrVideoTxt;
+@property (nonatomic, assign) NSString *uploadFileTxt;
+@property (nonatomic, assign) NSString *bibliotheekTxt;
+@property (nonatomic, assign) NSString *cancelTxt;
+
 - (void)presentFilesPickerOnController:(UIViewController *)presentFromController;
 - (void)presentFilesPickerOnController:(UIViewController *)presentFromController
   withAddingCustomActionsToActionSheet:(NSArray<JVTActionSheetAction *> *)customAlertActions;

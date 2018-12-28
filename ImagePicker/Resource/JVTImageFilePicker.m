@@ -39,6 +39,12 @@
         self.backgroundDimmedView = [[UIView alloc] init];
         self.backgroundDimmedView.backgroundColor = [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:0.5];
         self.imageResizeSize = DEFAULT_IMAGE_SIZE;
+      
+      self.photoLibraryTxt = @"Foto bibliotheek";
+      self.takePhotoOrVideoTxt = @"Neem foto";
+      self.uploadFileTxt = @"Upload File";
+      self.bibliotheekTxt = @"Kies bestand";
+      self.cancelTxt = @"Annuleer";
     }
     return self;
 }
@@ -55,31 +61,26 @@
     
     [self addBackgroundDimmed];
     [self showBackgroundDimmed];
-    
-    NSString *photoLibraryTxt = @"Foto bibliotheek";
-    NSString *takePhotoOrVideoTxt = @"Neem foto";
-    NSString *uploadFileTxt = @"Upload File";
-    NSString *bibliotheekTxt = @"Kies bestand";
-    NSString *cancelTxt = @"Annuleer";
+  
     self.actionSheet = [[JVTActionSheetView alloc] init];
     self.actionSheet.delegate = self;
     
     @weakify(self);
-    JVTActionSheetAction *uploadFile = [JVTActionSheetAction actionWithTitle:uploadFileTxt
+    JVTActionSheetAction *uploadFile = [JVTActionSheetAction actionWithTitle:self.uploadFileTxt
                                                                   actionType:kActionType_default
                                                                      handler:^(JVTActionSheetAction *action) {
                                                                          @strongify(self);
                                                                          [self uploadFilePress];
                                                                      }];
     
-    JVTActionSheetAction *cancel = [JVTActionSheetAction actionWithTitle:cancelTxt
+    JVTActionSheetAction *cancel = [JVTActionSheetAction actionWithTitle:self.cancelTxt
                                                               actionType:kActionType_cancel
                                                                  handler:^(JVTActionSheetAction *action) {
                                                                      @strongify(self);
                                                                      [self dismissPresentedControllerAndInformDelegate:nil];
                                                                  }];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-        JVTActionSheetAction *photoLibrary = [JVTActionSheetAction actionWithTitle:photoLibraryTxt
+        JVTActionSheetAction *photoLibrary = [JVTActionSheetAction actionWithTitle:self.photoLibraryTxt
                                                                         actionType:kActionType_default
                                                                            handler:^(JVTActionSheetAction *action) {
                                                                                @strongify(self);
@@ -88,7 +89,7 @@
         [self.actionSheet addAction:photoLibrary];
     }
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        JVTActionSheetAction *takePhotoOrVideo = [JVTActionSheetAction actionWithTitle:takePhotoOrVideoTxt
+        JVTActionSheetAction *takePhotoOrVideo = [JVTActionSheetAction actionWithTitle:self.takePhotoOrVideoTxt
                                                                             actionType:kActionType_default
                                                                                handler:^(JVTActionSheetAction *action) {
                                                                                    @strongify(self);
@@ -103,7 +104,7 @@
         [self.actionSheet addAction:uploadFile];
     }
   
-    JVTActionSheetAction *bibliotheekAction = [JVTActionSheetAction actionWithTitle:bibliotheekTxt
+    JVTActionSheetAction *bibliotheekAction = [JVTActionSheetAction actionWithTitle:self.bibliotheekTxt
                                                                        actionType:kActionType_default handler:^(JVTActionSheetAction *action) {
                                                                          @strongify(self);
                                                                          [self showDocumentPicker];
