@@ -31,6 +31,7 @@
 @property (nonatomic, assign) NSString *uploadFileTxt;
 @property (nonatomic, assign) NSString *bibliotheekTxt;
 @property (nonatomic, assign) NSString *cancelTxt;
+@property (nonatomic, assign) NSString *kiesTxt;
 
 - (void)presentFilesPickerOnController:(UIViewController *)presentFromController;
 - (void)presentFilesPickerOnController:(UIViewController *)presentFromController

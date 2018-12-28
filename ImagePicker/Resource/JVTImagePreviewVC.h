@@ -21,4 +21,8 @@
 - (instancetype)initWithImage:(UIImage *)image;
 - (CGRect)rectForImageView:(UIImage *)image;
 @property (nonatomic, weak) id<JVTImagePreviewVCDelegate> delegate;
+
+@property (nonatomic, assign) NSString *kiesTxt;
+@property (nonatomic, assign) NSString *cancelTxt;
+
 @end
