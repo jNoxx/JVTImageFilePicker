@@ -371,6 +371,7 @@
   if (self.presentedFromController.presentedViewController) {
     self.presentedFromController = self.presentedFromController.presentedViewController;
   }
+  
   JVTImagePreviewVC *imagePreviewViewController = [[JVTImagePreviewVC alloc] initWithImage:image];
   imagePreviewViewController.kiesTxt = self.kiesTxt;
   imagePreviewViewController.cancelTxt = self.cancelTxt;

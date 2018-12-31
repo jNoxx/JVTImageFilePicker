@@ -266,6 +266,9 @@ static int cameraIndex = 0;
         @strongify(self);
         if (!error) {
             self.imageDisplayVC = [[JVTImagePreviewVC alloc] initWithImage:image];
+            self.imageDisplayVC.cancelTxt = self.cancelTxt;
+            self.imageDisplayVC.kiesTxt = self.kiesTxt;
+
             self.imageDisplayVC.delegate = self;
             
             UIView *mainWindow = [[UIApplication sharedApplication].windows lastObject];

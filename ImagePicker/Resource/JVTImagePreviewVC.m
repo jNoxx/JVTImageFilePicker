@@ -36,6 +36,8 @@
   if (self) {
     _image = image;
     _imageView = [[UIImageView alloc] init];
+    self.kiesTxt = @"Kies";
+    self.cancelTxt = @"Annuleer";
     [self view];
     [self.view setNeedsDisplay];
     [self.view setNeedsLayout];
