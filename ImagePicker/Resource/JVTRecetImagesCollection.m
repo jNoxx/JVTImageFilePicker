@@ -52,6 +52,9 @@ static int cameraIndex = 0;
           withImagesToDisplay:(NSArray<UIImage *> *)imagesToDisplay {
     self = [super initWithFrame:frame];
     if (self) {
+        self.cancelTxt = @"Annuleer";
+        self.kiesTxt = @"Kies";
+      
         self.cameraAccesible = NO;
         self.imagesModel = imagesToDisplay;
         [self configureItemSize];
@@ -160,7 +163,9 @@ static int cameraIndex = 0;
     UIImage *image = [self imageForImagePath:indexPath];
     self.imageDisplayVC = [[JVTImagePreviewVC alloc] initWithImage:image];
     self.imageDisplayVC.delegate = self;
-    
+    self.imageDisplayVC.cancelTxt = self.cancelTxt;
+    self.imageDisplayVC.kiesTxt = self.kiesTxt;
+
     self.transitionImageOpenDelegate.openingFrame = frameToOpenFrom;
     self.transitionImageOpenDelegate.endingFrame = [self.imageDisplayVC rectForImageView:image];
     

@@ -134,6 +134,9 @@
       self.recetImagesCollection = [[JVTRecetImagesCollection alloc] initWithFrame:frame withImagesToDisplay:images];
       self.recetImagesCollection.delegate = self;
       self.recetImagesCollection.presentingViewController = self.presentedFromController;
+      self.recetImagesCollection.kiesTxt = self.kiesTxt;
+      self.recetImagesCollection.cancelTxt = self.cancelTxt;
+      
       [alertController addHeaderView:self.recetImagesCollection];
     }
     

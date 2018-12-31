@@ -19,4 +19,7 @@
           withImagesToDisplay:(NSArray<UIImage *> *)imagesToDisplay;
 @property (nonatomic, weak) id<JVTRecetImagesCollectionDelegate> delegate;
 @property (nonatomic, weak) UIViewController *presentingViewController;
+
+@property (nonatomic, assign) NSString *cancelTxt;
+@property (nonatomic, assign) NSString *kiesTxt;
 @end
