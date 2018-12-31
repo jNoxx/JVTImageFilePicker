@@ -263,10 +263,7 @@ static int cameraIndex = 0;
     [self.camera capture:^(LLSimpleCamera *camera, UIImage *image, NSDictionary *metadata, NSError *error) {
         @strongify(self);
         if (!error) {
-            self.imageDisplayVC = [[JVTImagePreviewVC alloc] initWithImage:image];
-            self.imageDisplayVC.cancelTxt = self.cancelTxt;
-            self.imageDisplayVC.kiesTxt = self.kiesTxt;
-
+            self.imageDisplayVC = [[JVTImagePreviewVC alloc] initWithImage:image kiesTxt:self.kiesTxt cancelTxt:self.cancelTxt];
             self.imageDisplayVC.delegate = self;
             
             UIView *mainWindow = [[UIApplication sharedApplication].windows lastObject];
