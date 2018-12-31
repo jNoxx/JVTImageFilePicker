@@ -161,10 +161,8 @@ static int cameraIndex = 0;
     CGRect frameToOpenFrom = [collectionView convertRect:attFrame toView:self.presentingViewController.view];
     
     UIImage *image = [self imageForImagePath:indexPath];
-    self.imageDisplayVC = [[JVTImagePreviewVC alloc] initWithImage:image];
+    self.imageDisplayVC = [[JVTImagePreviewVC alloc] initWithImage:image kiesTxt:self.kiesTxt cancelTxt:self.cancelTxt];
     self.imageDisplayVC.delegate = self;
-    self.imageDisplayVC.cancelTxt = self.cancelTxt;
-    self.imageDisplayVC.kiesTxt = self.kiesTxt;
 
     self.transitionImageOpenDelegate.openingFrame = frameToOpenFrom;
     self.transitionImageOpenDelegate.endingFrame = [self.imageDisplayVC rectForImageView:image];

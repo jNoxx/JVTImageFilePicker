@@ -31,13 +31,13 @@
   return self;
 }
 
-- (instancetype)initWithImage:(UIImage *)image {
+- (instancetype)initWithImage:(UIImage *)image kiesTxt:(NSString *)kiesTxt cancelTxt:(NSString *)cancelTxt {
   self = [super init];
   if (self) {
     _image = image;
     _imageView = [[UIImageView alloc] init];
-    self.kiesTxt = @"Kies";
-    self.cancelTxt = @"Annuleer";
+    self.kiesTxt = kiesTxt;
+    self.cancelTxt = cancelTxt;
     [self view];
     [self.view setNeedsDisplay];
     [self.view setNeedsLayout];

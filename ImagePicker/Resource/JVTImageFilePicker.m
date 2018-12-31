@@ -372,9 +372,7 @@
     self.presentedFromController = self.presentedFromController.presentedViewController;
   }
   
-  JVTImagePreviewVC *imagePreviewViewController = [[JVTImagePreviewVC alloc] initWithImage:image];
-  imagePreviewViewController.kiesTxt = self.kiesTxt;
-  imagePreviewViewController.cancelTxt = self.cancelTxt;
+  JVTImagePreviewVC *imagePreviewViewController = [[JVTImagePreviewVC alloc] initWithImage:image kiesTxt:self.kiesTxt cancelTxt:self.cancelTxt];
   
   imagePreviewViewController.delegate = self;
   if (self.presentedFromController.navigationController) {

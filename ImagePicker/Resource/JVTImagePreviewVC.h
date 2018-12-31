@@ -18,7 +18,7 @@
 @end
 
 @interface JVTImagePreviewVC : UIViewController
-- (instancetype)initWithImage:(UIImage *)image;
+- (instancetype)initWithImage:(UIImage *)image kiesTxt:(NSString *)kiesTxt cancelTxt:(NSString *)cancelTxt;
 - (CGRect)rectForImageView:(UIImage *)image;
 @property (nonatomic, weak) id<JVTImagePreviewVCDelegate> delegate;
 
